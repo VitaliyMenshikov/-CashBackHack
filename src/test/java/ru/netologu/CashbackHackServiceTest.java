@@ -1,22 +1,22 @@
 package ru.netologu;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
-import static org.testng.Assert.*;
+import static org.junit.Assert.*;
 
 public class CashbackHackServiceTest {
 
     @Test
-    public void testRemain() {
+    public void remain() {
         CashbackHackService service = new CashbackHackService();
-        int amount = 400;
+        int amount = 120;
         int actual = service.remain(amount);
-        int expected = 600;
+        int expected = 880;
         assertEquals(actual, expected);
     }
 
     @Test
-    public void testRemain1() {
+    public void remain1() {
         CashbackHackService service = new CashbackHackService();
         int amount = 900;
         int actual = service.remain(amount);
@@ -25,7 +25,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    public void testRemain2() {
+    public void remain2() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
         int actual = service.remain(amount);
@@ -34,7 +34,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    public void testRemain3() {
+    public void remain3() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1100;
         int actual = service.remain(amount);
@@ -43,9 +43,9 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    public void testRemain4() {
+    public void remain4() {
         CashbackHackService service = new CashbackHackService();
-        int amount = 1800;
+        int amount = 4263;
         int actual = service.remain(amount);
         int expected = 0;
         assertEquals(actual, expected);
